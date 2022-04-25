@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(../img/giphy.gif);
+  background-position: center;
+  background-size: 55%;
+}
+.container .loader {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.904);
+  width: 100%;
+  height: 100vh;
+  z-index: 99;
+}
+.container .loader p {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  margin-top: 38vh;
+}
+.container .loader .btn {
+  width: 50px;
+  height: 40px;
+  border: 1px solid white;
+  margin: 0 auto;
+  color: white;
+  display: none;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 5px;
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+.container .loader .btn:hover {
+  box-shadow: 0px 0px 10px 1px white;
+  transform: scale(1.1);
+}
+.container .loader_passiv {
+  display: none;
+}
+.container .block {
+  width: 70%;
+  height: 80vh;
+  border: 1px solid white;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.452);
+  backdrop-filter: blur(2px);
+  display: inline-block;
+  text-align: center;
+  box-shadow: 0px 0px 50px 10px rgba(255, 255, 255, 0.616);
+}
+.container .block .search {
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 40px;
+  margin: 40px;
+  margin: 0 auto;
+  margin-top: 40px;
+  border-radius: 20px;
+  background-color: white;
+  position: relative;
+}
+.container .block .search .input {
+  width: 90%;
+  font-size: 20px;
+  outline: none;
+  border: none;
+}
+.container .block .search .btn {
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  line-height: 40px;
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+}
+.container .block .countryName {
+  color: white;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-top: 50px;
+}
+.container .block .cardlar {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.container .block .cardlar .card {
+  width: 160px;
+  height: 180px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.644);
+  box-shadow: 0px 0px 20px 1px rgba(255, 0, 0, 0.541);
+}
+.container .block .cardlar .card img {
+  width: 100%;
+  border-radius: 5px;
+}
+.container .block .cardlar .card .icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.container .block .cardlar .card .icon img {
+  width: 150%;
+  margin: 0 auto;
+  margin-top: -25px;
+  margin-left: -25px;
+}
+.container .block .cardlar .card .icon .hard {
+  width: 100%;
+  margin: 0 auto;
+}
+.container .block .cardlar .card h3 {
+  line-height: 30px;
+}
+.container .block .cardlar .card i {
+  color: #dd2727;
+  font-size: 80px;
+  line-height: 100px;
+}
+.container .block .cardlar .card span {
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  font-size: 23px;
+  border-radius: 13px;
+  padding: 0px 8px;
+}
+.container .block .cardlar .bayroq {
+  width: 270px;
+  display: flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  box-shadow: none;
+}
+.container .block .cardlar .bayroq img {
+  box-shadow: 0px 0px 20px 1px rgba(255, 0, 0, 0.541);
+}
+
+@media (max-width: 447px) {
+  .block {
+    width: 90% !important;
+    height: 90vh !important;
+  }
+  .block .search {
+    width: 90% !important;
+    margin-top: 20px !important;
+  }
+  .block .search .input {
+    width: 80% !important;
+  }
+  .block .countryName {
+    margin-top: 20px !important;
+  }
+  .block .cardlar {
+    margin-top: 0px !important;
+    padding: 0px !important;
+  }
+  .block .cardlar .card {
+    width: 150px !important;
+    height: 180px !important;
+    margin-top: 20px !important;
+  }
+  .block .cardlar .card h3 {
+    font-size: 14px !important;
+    font-weight: 200 !important;
+  }
+  .block .cardlar .card span {
+    font-size: 16px !important;
+  }
+  .block .cardlar .bayroq {
+    margin: 0 auto;
+    height: 150px !important;
+  }
+}/*# sourceMappingURL=main.css.map */
